@@ -2,16 +2,16 @@
 #include <stdlib.h>
 
 void bubblesort(int vetor[], int num){
-	int i, j;
-	for(j=0; j<num; j++) {
-		for(i=0; i<num-1; i++) {
-			if(vetor[i] > vetor[i+1]){
-				int aux = vetor[i];
-				vetor[i] = vetor[i+1];
-				vetor[i+1] = aux;
-			}
-		}
-	}
+  int i, j, aux;
+  for(j=0; j<num; j++) {
+    for(i=0; i<num-1; i++) {
+      if(vetor[i] > vetor[i+1]){
+        aux = vetor[i];
+        vetor[i] = vetor[i+1];
+        vetor[i+1] = aux;
+      }
+    }
+  }
 }
 
 int main () {
